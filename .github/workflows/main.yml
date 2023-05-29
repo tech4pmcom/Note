@@ -19,4 +19,4 @@ jobs:
         git fetch
         git checkout gh-pages
         git merge main --no-edit
-        git push origin gh-pages
+        git push origin gh-pages --allow-unrelated-histories
