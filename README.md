@@ -7,4 +7,4 @@
 
 #### TODOs:
 
-- Add TODOs
+- Review GitHub Workflow
