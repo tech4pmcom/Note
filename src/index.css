@@ -2,17 +2,77 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #aaa;
 }
-#text_area {
+.text-area {
     width: calc(100% - 20px);
     height: calc(100vh - 80px);
     margin: 5px;
     resize: none;
 }
-#button {
+.text-area:focus {
+    outline: none;
+}
+.text-area-fancy-design {
+    position: relative;
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding: 5px;
+}
+.text-area-for-light {
+    background-color: #f0f0f0;
+    color: #222;
+}
+.text-area-for-dark {
+    background-color: #222;
+    color: #f0f0f0;
+}
+.btn-fancy-design {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-hover-light:hover {
+    background-color: #444;
+    color: #f0f0f0;
+}
+.btn-hover-dark:hover {
+    background-color: #f0f0f0;
+    color: #444;
+}
+.btn-switch-mode {
     position: absolute;
     left: 5px;
     bottom: 5px;
-    margin: 20px 0;
+    cursor: pointer;
+}
+.btn-for-dark {
+    background-color: #444;
+    color: #f0f0f0;
+}
+.btn-disabled {
+    background-color: #aaa;
+    color: #666;
+    cursor: not-allowed;
+}
+.btn-zoom-font-decrease {
+    position: absolute;
+    left: 105px;
+    bottom: 5px;
+    cursor: pointer;
+}
+.btn-zoom-font-increase {
+    position: absolute;
+    left: 135px;
+    bottom: 5px;
+    cursor: pointer;
+}
+.btn-download {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
     cursor: pointer;
 }
